@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"]*/
-
 const path = require('path');
 const webpack = require('webpack');
 
@@ -17,6 +15,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
+    // make output aware from where it's going to be served from
     publicPath: '/public/'
   },
   devServer: {
