@@ -1,5 +1,4 @@
-/* eslint linebreak-style: ["error", "windows"]*/
-
+// Place for browser code!
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -10,6 +9,7 @@ const renderApp = () => {
 };
 renderApp();
 
+// only for dev server
 if (module.hot) {
   module.hot.accept('./App', () => {
     renderApp();
