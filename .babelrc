@@ -11,6 +11,11 @@
 	],
   "plugins": [
     "react-hot-loader/babel",
+    // allow webpack to understand import
+    "babel-plugin-syntax-dynamic-import",
+    // translate that import to something webpack understads
+    // require.ensure() !
+    "babel-plugin-dynamic-import-webpack",    
     "babel-plugin-transform-class-properties"
   ],
   "env": {
