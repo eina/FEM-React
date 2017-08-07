@@ -28,6 +28,8 @@ module.exports = {
   module: {
     // apply different loaders to code whooo
     rules: [
+      // run before babel, only on files that changed
+      { enforce: 'pre', test: /\.jsx?$/, loader: 'eslint-loader', exclude: /node_modules/ },
       { test: /\.jsx?$/, loader: 'babel-loader' }
     ]
   }
