@@ -20,5 +20,6 @@
 		"browser": true,
 		"node": true,
     "jest": true
-	}
+	},
+	"linebreak-style": ["error", "windows"]
 }
